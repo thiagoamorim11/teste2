@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    <title>Cálculo Fator Lucro</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cálculo do Fator de Lucro</h1>
+      <form id="form">
+        
+         <p>
+          <label for="">Soma dos resultados positivos:</label>
+          <input type="number" id='somapositiva' placeholder="R$ 1000,00" />
+        </p>
+        <p>
+          <label for="">Soma dos resultados negativos:</label>
+          <input type="number" id='somanegativa' placeholder="R$ 1000,00" />
+        </p>
+        <!-- <p>
+          <label>Soma dos resultados positivos:</label>
+          <input type="text" class="form-control" placeholder="R$ 1.000,00" id='somapositiva' name='somapositiva' ><br>
+          <script type="text/javascript">
+           $('#somapositiva').mask("R$ 0.000.###,00"); </script>
+         </p>
+        <p>
+           <label>Soma dos resultados negativos:</label>
+           <input type="text" class="form-control" placeholder="R$ 1.000,00" id='somanegativa' name='somanegativa' ><br>
+           <script type="text/javascript">
+            $('#somanegativa').mask("R$ 0.000.###,00"); </script>
+          </p> -->
+        <p>
+          <label for="">Quantidadsse total de operações:</label>
+          <input type="number" id='qtdtotal' placeholder="60"/>
+        </p>
+        <p>
+          <label for="">Quantidade de operações positivas:</label>
+          <input type="number" id='qtdpositiva' placeholder="30" />
+        </p>
+        <p>
+          <label for="">Quantidade de operações negativas:</label>
+          <input type="number" id='qtdnegativa' placeholder="24"/>
+        </p>
+        <p>
+          <label for="">Quantidade de operações zerada:</label>
+          <input type="number" id='qtdzerada' placeholder="6"/>
+        </p>
+
+      </form>
+
+        <div class="buttons">
+          <button id='calcular' >Calcular</button>
+          <button type="reset" id='limpar'>Limpar</button>
+        </div>
+        <form id="form">
+      <div class="result" id='resultado'></div>
+      <div class="result2" id='resultado2'></div>
+      </form>
+    </div>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>
